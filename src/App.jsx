@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react'
-import PostDetailPage from './pages/PostsListPage'
+import PostsListPage from './pages/PostsListPage'
 import './App.css'
-import PostsListPage from './pages/PostDetailPage'
+import PostDetailPage from './pages/PostDetailPage'
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
-  
 
   return (
     <div className="container mx-auto p-4">

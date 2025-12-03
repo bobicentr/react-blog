@@ -1,1 +1,1 @@
-export default function PostsListPage() { return <h1>Список постов</h1>; }
+export default function PostDetailPage() { return <h1>Список</h1>; }
