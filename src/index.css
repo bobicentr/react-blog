@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  /* Пока оставляем пустым, но сюда можно добавлять кастомные стили */
+}
+
+/* Добавим базовые стили для body для удобства */
+@layer base {
+  body {
+    @apply bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300;
+  }
+}

@@ -1,0 +1,1 @@
+export default function PostDetailPage() { return <h2>Пост</h2>; }
