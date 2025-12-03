@@ -37,10 +37,17 @@ function PostsListPage () {
                     <div className="grid auto-rows-fr grid-cols-2 md:grid-cols-4 gap-3 ">
                         {posts.map(post => (
                         <Link key={post.id} to={`/posts/${post.id}`}>
-                            <div className="flex text-left justify-around h-full flex-col bg-zinc-300 dark:bg-slate-950 dark:text-white pl-2 pt-1 ">
-                                <p className="border-b-1 border-zinc-950 dark:border-zinc-50" >{post.title}</p>
-                                <p className="">{post.body}</p>
+                                
+                            <div className="h-full flex flex-col rounded-lg bg-white dark:bg-slate-800 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 p-4">
+                                <h3 className="text-lg line-clamp-3 font-semibold text-slate-900 dark:text-slate-100 mb-2 pb-2 border-b border-slate-200 dark:border-slate-700">
+                                    {post.title}
+                                </h3>
+                                <p className="text-sm text-slate-600 dark:text-slate-400 line-clamp-4">
+                                    {post.body}
+                                </p>
                             </div>
+
+  
                         </Link>
                         ))}
                         
